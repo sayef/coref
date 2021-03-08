@@ -1,5 +1,5 @@
 import tensorflow as tf
-from bert.optimization import AdamWeightDecayOptimizer
+from .bert.optimization import AdamWeightDecayOptimizer
 
 def create_custom_optimizer(tvars, loss, bert_init_lr, task_init_lr, num_train_steps, num_warmup_steps, use_tpu, global_step=None, freeze=-1, task_opt='adam', eps=1e-6):
   """Creates an optimizer training op."""

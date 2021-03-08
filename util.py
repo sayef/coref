@@ -13,8 +13,8 @@ import numpy as np
 import tensorflow as tf
 import pyhocon
 
-import independent
-import overlap
+from . import independent
+from . import overlap
 
 _dir = os.path.dirname(os.path.abspath(__file__))
 

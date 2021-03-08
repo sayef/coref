@@ -10,14 +10,14 @@ import threading
 import numpy as np
 import tensorflow as tf
 
-import util
-import coref_ops
-import conll
-import metrics
-import optimization
-from bert import tokenization
-from bert import modeling
-from pytorch_to_tf import load_from_pytorch_checkpoint
+from . import util
+from . import coref_ops
+from . import conll
+from . import metrics
+from . import optimization
+from .bert import tokenization
+from .bert import modeling
+from .pytorch_to_tf import load_from_pytorch_checkpoint
 
 
 class CorefModel(object):
